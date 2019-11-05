@@ -1,0 +1,28 @@
+body {
+    background-image: url(../media/bananas.png);
+}
+h1 {
+    font-size: 80px;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #646356;
+}
+
+h2 {
+    color: #646356;
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+}
+
+main img {
+    width: 500px;
+    height: 600px;
+}
+
+.birthday {
+    background-color: #F8EFC2;
+    border: #646356 solid 2px;
+    box-shadow: rgb(92, 92, 92) 2px 2px 2px 2px;
+}
