@@ -12,7 +12,7 @@ Make a Age verification.
 Set the minimum Age to 18.
 Set a input date to enter the person's birthday. //
 Set a function to check today's day. //
-Go through each date input.
+Go through each date input.//
 Pass through input Year and subtract it from Today's Date
 If INPUT Year is > 18 Allow entry.
 If INPUT Year is = 18 Run through Month conditionals.
@@ -39,32 +39,37 @@ function minDate() {
     
     today = mm + '/' + dd + '/' + yyyy;
     //SPLIT -- Look Up.
+    // SLICE -- seperates 1999-11-11 
+    //        let variable = obj.slice(0,4); //1999
+    //        let variable2 = obj.slice(5,7); // 11
+    //        let variable3 = obj.slice(8,10); //11
+    //Substring similar to SLICE  index=>(0,0)<= how many character to move from there
     let inputDate = document.getElementById('input2').value;
     let d = new Date(inputDate)
     let day = d.getUTCDate();
     let month = d.getUTCMonth() + 1;
     let year = d.getUTCFullYear();
 
+    let allow = document.getElementById('allowed');
 
     if (yyyy - year > 18) {
-        let allow = document.getElementById('allowed');
+
         allow.innerHTML = "Welcome to Here."
     } else if (yyyy - year < 18) {
-        let allow = document.getElementById('allowed');
+
         allow.innerHTML = "Leave my Website."
-    } else  {
+    } else  {89
         if (month < mm) {
-            let allow = document.getElementById('allowed');
+
             allow.innerHTML = "Welcome to Here."
         } else if (month > mm) {
-            let allow = document.getElementById('allowed');
+
             allow.innerHTML = "Leave my Website."
         } else {
             if (day <= dd) {
-                let allow = document.getElementById('allowed');
                 allow.innerHTML = "Welcome to Here."
             } else {
-                let allow = document.getElementById('allowed');
+    
             allow.innerHTML = "Leave my Website."
             }
         }
